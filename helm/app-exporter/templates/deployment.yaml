@@ -25,7 +25,6 @@ spec:
           - podAffinityTerm:
               labelSelector:
                 matchLabels:
-                  extra: lablesthatyoumakemefeelwrong
                   {{- include "labels.selector" . | nindent 18 }}
               topologyKey: kubernetes.io/hostname
             weight: 100
